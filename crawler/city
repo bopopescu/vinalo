@@ -1,0 +1,317 @@
+[
+  {
+    "name": "TP. HCM",
+    "sid": "52552f0af525bc126c92e5cc",
+    "id": "24"
+  },
+  {
+    "name": "Bình Phước",
+    "sid": "52552f0af525bc126c92e5f5",
+    "id": "5"
+  },
+  {
+    "name": "Bình Dương",
+    "sid": "52552f0af525bc126c92e5f6",
+    "id": "4"
+  },
+  {
+    "name": "Tây Ninh",
+    "sid": "52552f0af525bc126c92e5f8",
+    "id": "52"
+  },
+  {
+    "name": "Đồng Nai",
+    "sid": "52552f0af525bc126c92e5fa",
+    "id": "58"
+  },
+  {
+    "name": "Long An",
+    "sid": "52552f0af525bc126c92e5fb",
+    "id": "29"
+  },
+  {
+    "name": "Đồng Tháp",
+    "sid": "52552f0af525bc126c92e5fc",
+    "id": "59"
+  },
+  {
+    "name": "An Giang",
+    "sid": "52552f0af525bc126c92e5fd",
+    "id": "2"
+  },
+  {
+    "name": "Vũng Tàu",
+    "sid": "52552f0af525bc126c92e5fe",
+    "id": "3"
+  },
+  {
+    "name": "Tiền Giang",
+    "sid": "52552f0af525bc126c92e5ff",
+    "id": "49"
+  },
+  {
+    "name": "Kiên Giang",
+    "sid": "52552f0af525bc126c92e600",
+    "id": "26"
+  },
+  {
+    "name": "Cần Thơ",
+    "sid": "52552f0af525bc126c92e601",
+    "id": "14"
+  },
+  {
+    "name": "Bến Tre",
+    "sid": "52552f0af525bc126c92e602",
+    "id": "11"
+  },
+  {
+    "name": "Vĩnh Long",
+    "sid": "52552f0af525bc126c92e603",
+    "id": "53"
+  },
+  {
+    "name": "Trà Vinh",
+    "sid": "52552f0af525bc126c92e604",
+    "id": "50"
+  },
+  {
+    "name": "Sóc Trăng",
+    "sid": "52552f0af525bc126c92e605",
+    "id": "61"
+  },
+  {
+    "name": "Bạc Liêu",
+    "sid": "52552f0af525bc126c92e606",
+    "id": "60"
+  },
+  {
+    "name": "Cà Mau",
+    "sid": "52552f0af525bc126c92e607",
+    "id": "13"
+  },
+  {
+    "name": "Hậu Giang",
+    "sid": "52552f0af525bc126c92e60a",
+    "id": "62"
+  },
+  {
+    "name": "Đà Nẵng",
+    "sid": "52552f0af525bc126c92e5cf",
+    "id": "56"
+  },
+  {
+    "name": "Thanh Hóa",
+    "sid": "52552f0af525bc126c92e5e6",
+    "id": "45"
+  },
+  {
+    "name": "Nghệ An",
+    "sid": "52552f0af525bc126c92e5e7",
+    "id": "34"
+  },
+  {
+    "name": "Hà Tĩnh",
+    "sid": "52552f0af525bc126c92e5e8",
+    "id": "19"
+  },
+  {
+    "name": "Quảng Bình",
+    "sid": "52552f0af525bc126c92e5e9",
+    "id": "70"
+  },
+  {
+    "name": "Quảng Trị",
+    "sid": "52552f0af525bc126c92e5ea",
+    "id": "43"
+  },
+  {
+    "name": "TT. Huế",
+    "sid": "52552f0af525bc126c92e5eb",
+    "id": "48"
+  },
+  {
+    "name": "Quảng Nam",
+    "sid": "52552f0af525bc126c92e5ec",
+    "id": "40"
+  },
+  {
+    "name": "Quảng Ngãi",
+    "sid": "52552f0af525bc126c92e5ed",
+    "id": "41"
+  },
+  {
+    "name": "Kon Tum",
+    "sid": "52552f0af525bc126c92e5ee",
+    "id": "27"
+  },
+  {
+    "name": "Bình Định",
+    "sid": "52552f0af525bc126c92e5ef",
+    "id": "7"
+  },
+  {
+    "name": "Gia Lai",
+    "sid": "52552f0af525bc126c92e5f0",
+    "id": "15"
+  },
+  {
+    "name": "Phú Yên",
+    "sid": "52552f0af525bc126c92e5f1",
+    "id": "38"
+  },
+  {
+    "name": "Đắk Lắk",
+    "sid": "52552f0af525bc126c92e5f2",
+    "id": "57"
+  },
+  {
+    "name": "Khánh Hòa",
+    "sid": "52552f0af525bc126c92e5f3",
+    "id": "25"
+  },
+  {
+    "name": "Lâm Đồng",
+    "sid": "52552f0af525bc126c92e5f4",
+    "id": "31"
+  },
+  {
+    "name": "Ninh Thuận",
+    "sid": "52552f0af525bc126c92e5f7",
+    "id": "36"
+  },
+  {
+    "name": "Bình Thuận",
+    "sid": "52552f0af525bc126c92e5f9",
+    "id": "6"
+  },
+  {
+    "name": "Đắk Nông",
+    "sid": "52552f0af525bc126c92e609",
+    "id": "63"
+  },
+  {
+    "name": "Hà Nội",
+    "sid": "52552f0af525bc126c92e5cd",
+    "id": "18"
+  },
+  {
+    "name": "Hải Phòng",
+    "sid": "52552f0af525bc126c92e5ce",
+    "id": "23"
+  },
+  {
+    "name": "Hà Giang",
+    "sid": "52552f0af525bc126c92e5d0",
+    "id": "16"
+  },
+  {
+    "name": "Cao Bằng",
+    "sid": "52552f0af525bc126c92e5d1",
+    "id": "12"
+  },
+  {
+    "name": "Lai Châu",
+    "sid": "52552f0af525bc126c92e5d2",
+    "id": "28"
+  },
+  {
+    "name": "Lào Cai",
+    "sid": "52552f0af525bc126c92e5d3",
+    "id": "30"
+  },
+  {
+    "name": "Tuyên Quang",
+    "sid": "52552f0af525bc126c92e5d4",
+    "id": "51"
+  },
+  {
+    "name": "Lạng Sơn",
+    "sid": "52552f0af525bc126c92e5d5",
+    "id": "32"
+  },
+  {
+    "name": "Bắc Cạn",
+    "sid": "52552f0af525bc126c92e5d6",
+    "id": "9"
+  },
+  {
+    "name": "Thái Nguyên",
+    "sid": "52552f0af525bc126c92e5d7",
+    "id": "47"
+  },
+  {
+    "name": "Yên Bái",
+    "sid": "52552f0af525bc126c92e5d8",
+    "id": "55"
+  },
+  {
+    "name": "Sơn La",
+    "sid": "52552f0af525bc126c92e5d9",
+    "id": "44"
+  },
+  {
+    "name": "Phú Thọ",
+    "sid": "52552f0af525bc126c92e5da",
+    "id": "37"
+  },
+  {
+    "name": "Vĩnh Phúc",
+    "sid": "52552f0af525bc126c92e5db",
+    "id": "54"
+  },
+  {
+    "name": "Quảng Ninh",
+    "sid": "52552f0af525bc126c92e5dc",
+    "id": "42"
+  },
+  {
+    "name": "Bắc Giang",
+    "sid": "52552f0af525bc126c92e5dd",
+    "id": "8"
+  },
+  {
+    "name": "Bắc Ninh",
+    "sid": "52552f0af525bc126c92e5de",
+    "id": "10"
+  },
+  {
+    "name": "Hải Dương",
+    "sid": "52552f0af525bc126c92e5df",
+    "id": "22"
+  },
+  {
+    "name": "Hưng Yên",
+    "sid": "52552f0af525bc126c92e5e0",
+    "id": "21"
+  },
+  {
+    "name": "Hòa Bình",
+    "sid": "52552f0af525bc126c92e5e1",
+    "id": "20"
+  },
+  {
+    "name": "Hà Nam",
+    "sid": "52552f0af525bc126c92e5e2",
+    "id": "17"
+  },
+  {
+    "name": "Nam Định",
+    "sid": "52552f0af525bc126c92e5e3",
+    "id": "33"
+  },
+  {
+    "name": "Thái Bình",
+    "sid": "52552f0af525bc126c92e5e4",
+    "id": "46"
+  },
+  {
+    "name": "Ninh Bình",
+    "sid": "52552f0af525bc126c92e5e5",
+    "id": "35"
+  },
+  {
+    "name": "Điện Biên",
+    "sid": "52552f0af525bc126c92e608",
+    "id": "64"
+  }
+]

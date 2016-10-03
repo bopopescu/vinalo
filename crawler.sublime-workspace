@@ -1,0 +1,266 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/q/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 19546,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"os.environ",
+			"print os.environ['HOME']",
+			"import os",
+			"echo $PATH"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/q/Desktop/crawler",
+		"/Users/q/Desktop/crawler/crawler",
+		"/Users/q/Desktop/crawler/crawler/crawler",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders"
+	],
+	"file_history":
+	[
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/hello_spider.py",
+		"/Users/q/Desktop/crawler/crawler.py",
+		"/Users/q/Desktop/crawler/crawler.sublime-project",
+		"/Users/q/Desktop/crawler/import scrapy",
+		"/Users/q/Desktop/wassup/Podfile",
+		"/Users/q/Desktop/Bản tường trình",
+		"/Users/q/Desktop/alidiep",
+		"/Users/q/Downloads/MessageBanner-master/MessageBannerDemo/Podfile",
+		"/Users/q/Desktop/oantuxi/Podfile",
+		"/Users/q/Downloads/Bone.Tomahawk.2015.1080p.BluRay.H264.AAC-RARBG/Bone.Tomahawk.2015.1080p.BluRay.H264.AAC-RARBG.sub",
+		"/Users/q/Documents/wassup/trunk/android_source/Wassup/app/src/main/java/vn/wassup/search/ActivitySearchFragment.java",
+		"/Users/q/Documents/wassup/trunk/iOS/swift source/wassup/Podfile",
+		"/Users/q/Desktop/storyboard.xml"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/bin",
+			"/Users/bin",
+			"/Users/q/bin",
+			"option",
+			"CGV KHUYẾN MÃI TẶNG VÉ MIỄN PHÍ DÀNH CHO KHÁCH HÀNG GALAXY S7",
+			"CGV Hùng Vương Plaza",
+			"LOTTE CINEMA - KHUYẾN MÃI LOVELY",
+			"CGV - HAPPY WEDNESDAY",
+			"ĐẠI HỘI THỂ THAO BÃI BIỂN",
+			"img"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/q/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19546,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9502,
+								9502
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5349.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 260.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "crawler.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
