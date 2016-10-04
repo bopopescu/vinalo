@@ -128,8 +128,8 @@ class Host:
             # print self.db._db_cur._executed
             return self.db.getLastId()
         except mysql.connector.Error as err:
-            print "error:", err
-            print(self.db._db_cur._executed)
+            logging.log(logging.ERROR, err)
+            logging.log(logging.ERROR, self.db._db_cur._executed)
         return -1
 
     def checkExisted(self):
