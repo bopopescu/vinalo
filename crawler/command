@@ -1,0 +1,5 @@
+setsid /home/crawler/crawler/script.sh >/home/crawler/crawler/log_stdout 2>&1 < /dev/null &
+
+kill $(ps -fade | grep script.sh | grep -v grep | awk '{print $2}')
+
+* * * * * /home/crawler/crawler/script.sh >/home/crawler/crawler/log_stdout

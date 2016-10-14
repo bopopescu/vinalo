@@ -11,3 +11,4 @@ class HelloSpider(scrapy.Spider):
         next_page = response.css('div.prev-post > a ::attr(href)').extract_first()
         if next_page:
             yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
+            

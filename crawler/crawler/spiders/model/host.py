@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import scrapy
 from unidecode import unidecode
 import re
 from unicodedata import normalize
@@ -13,8 +14,11 @@ from city import City
 import mysql.connector
 from mysql.connector import Error
 import logging
+from tag import Tag
+from objectTag import ObjectTag
+# from PIL import Image
 
-class Host:
+class Host():
     name = ""
     description = ""
     address = ""
@@ -32,10 +36,11 @@ class Host:
     districtId = ""
     startTime = "08:00:00"
     endTime = "21:00:00"
-    viewMap = 1
+    viewMap = 0
     crawler = ""
     suffixId = ""
     db = MyDB()
+    listTagId = []
 
     def parse(self, str):
         data = str.split("[0h0]")
@@ -47,6 +52,7 @@ class Host:
         self.longtitude = location[1]
         self.suffixId = data[22]
         self.alias = data[12]
+        self.crawler = data[22]
 
     def parseContent(self, response):
         hxs = Selector(text=response.body)
@@ -79,12 +85,35 @@ class Host:
                 except (ValueError,IndexError):
                     pass
 
-        if len(rows) >= 3:
-            self.tag = rows[2].strip()
-
-        rows = hxs.xpath('//div[@class="rdct_0"]/table/tr/td/div/p[@class="bleftdd_1"]/a/text()').extract()
+        self.listTagId = []
+        tag = Tag()
+        #khung gia: 2tr -10tr
+        rows = hxs.xpath('//div[@class="rdct_0"]/table/tr').extract()
         for row in rows:
-            self.tag += ',' + row.strip()
+            listTd = Selector(text=row).xpath('//td/p/text()').extract()
+            if len(listTd) > 0:
+                left = listTd[0]
+                listTd = Selector(text=row).xpath('//td/b/text()').extract()
+                right = listTd[0]
+
+                if left.find(u'giá') > 0:
+                    self.tag = right
+                    self.listTagId.append(tag.getIdTagFromName(self.tag, 16339))
+
+        rows = hxs.xpath('//div[@class="rdct_0"]/table/tr/td/div/p[@class="imgtiddtt"]/text()').extract()
+        # print 'haha'
+        # print rows
+        for idx,row in enumerate(rows):
+            if row == u'Tiện ích':
+                xpath = '//div[@class="rdct_0"]/table/tr/td/div'
+                rr = hxs.xpath(xpath).extract()
+                rrr = Selector(text=rr[idx]).xpath('//p[@class="bleftdd_1"]/a/text()').extract()
+                # print rrr
+                for r in rrr:
+                    t = r.strip()
+                    if t != u'Khác':
+                        self.tag += ',' + t
+                        self.listTagId.append(tag.getIdTagFromName(t, 16359))
         # print self.tag
 
         rows = hxs.xpath('//div[@class="ndungleftdct"]/div[@class="ndleft_0"]/p/text()').extract()
@@ -101,13 +130,14 @@ class Host:
             district = rows[2][8:].strip()
             city = City()
             self.districtId = city.getIdProvinceFromCity(cityId, district)
+            # print "districtId=",self.districtId
             # print self.districtId
 
 
     def insertDB(self):
         self.db.query("set names utf8;", None) 
-        query = "INSERT INTO host (name,description,address,phone,image_profile,longtitude,lattitude,website,alias,type_id,tag,district_id,starttime,endtime,crawler)" \
-        " VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+        query = "INSERT INTO host (name,description,address,phone,image_profile,longtitude,lattitude,website,alias,type_id,tag,district_id,starttime,endtime,crawler,view_map)" \
+        " VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
         try:
             self.db.query(query, (self.name,
             self.description,
@@ -123,13 +153,14 @@ class Host:
             self.districtId,
             self.startTime,
             self.endTime,
-            self.suffixId))
+            self.suffixId,
+            self.viewMap))
             self.db.commit()
             # print self.db._db_cur._executed
             return self.db.getLastId()
         except mysql.connector.Error as err:
-            logging.log(logging.ERROR, err)
-            logging.log(logging.ERROR, self.db._db_cur._executed)
+            print err
+            print self.db._db_cur._executed
         return -1
 
     def checkExisted(self):
@@ -141,7 +172,7 @@ class Host:
                 return True
             return False
         except mysql.connector.Error as err:
-            logging.log(logging.ERROR, err)
+            print err
         return False
 
 

@@ -4,7 +4,13 @@ crawler/items.py
 crawler/pipelines.py
 crawler/settings.py
 crawler/spiders/__init__.py
+crawler/spiders/city_spider.py
 crawler/spiders/hello_spider.py
+crawler/spiders/vinalo_spider.py
+crawler/spiders/model/__init__.py
+crawler/spiders/model/city.py
+crawler/spiders/model/db.py
+crawler/spiders/model/host.py
 project.egg-info/PKG-INFO
 project.egg-info/SOURCES.txt
 project.egg-info/dependency_links.txt
