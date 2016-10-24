@@ -1,10 +1,5 @@
 [
   {
-    "name": "TP. HCM",
-    "sid": "52552f0af525bc126c92e5cc",
-    "id": "24"
-  },
-  {
     "name": "Bình Phước",
     "sid": "52552f0af525bc126c92e5f5",
     "id": "5"
@@ -95,11 +90,6 @@
     "id": "62"
   },
   {
-    "name": "Đà Nẵng",
-    "sid": "52552f0af525bc126c92e5cf",
-    "id": "56"
-  },
-  {
     "name": "Thanh Hóa",
     "sid": "52552f0af525bc126c92e5e6",
     "id": "45"
@@ -188,11 +178,6 @@
     "name": "Đắk Nông",
     "sid": "52552f0af525bc126c92e609",
     "id": "63"
-  },
-  {
-    "name": "Hà Nội",
-    "sid": "52552f0af525bc126c92e5cd",
-    "id": "18"
   },
   {
     "name": "Hải Phòng",
@@ -313,5 +298,20 @@
     "name": "Điện Biên",
     "sid": "52552f0af525bc126c92e608",
     "id": "64"
+  },
+  {
+    "name": "TP. HCM",
+    "sid": "52552f0af525bc126c92e5cc",
+    "id": "24"
+  },
+  {
+    "name": "Hà Nội",
+    "sid": "52552f0af525bc126c92e5cd",
+    "id": "18"
+  },
+  {
+    "name": "Đà Nẵng",
+    "sid": "52552f0af525bc126c92e5cf",
+    "id": "56"
   }
 ]

@@ -9,6 +9,9 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
+LOG_LEVEL = 'ERROR'
+# LOG_FILE = 'log_error'
+
 BOT_NAME = 'crawler'
 
 SPIDER_MODULES = ['crawler.spiders']

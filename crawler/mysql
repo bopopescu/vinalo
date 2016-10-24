@@ -1,0 +1,2 @@
+#count host each province
+select * from city_province left join (SELECT district.city_id as cityId, COUNT(host.id) FROM `host` left join district on host.district_id = district.id GROUP BY district.city_id) as a on a.cityId = city_province.id
