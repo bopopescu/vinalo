@@ -3,16 +3,104 @@
 	{
 		"selected_items":
 		[
+			[
+				"check",
+				"checkNextPage\tfunction"
+			],
+			[
+				"nex",
+				"nextPage\tstatement"
+			],
+			[
+				"index",
+				"indexSId"
+			],
+			[
+				"sta",
+				"start_requests\tfunction"
+			],
+			[
+				"ne",
+				"nextPage\tstatement"
+			],
+			[
+				"ex",
+				"extract\tfunction"
+			],
+			[
+				"O",
+				"objectTag\tmodule"
+			],
+			[
+				"slug",
+				"slugify\tmodule"
+			],
+			[
+				"Uni",
+				"UnicodeDecodeError\tclass"
+			],
+			[
+				"dis",
+				"districtId\tstatement"
+			],
+			[
+				"respons",
+				"response"
+			],
+			[
+				"city",
+				"City"
+			],
+			[
+				"dic",
+				"districtId"
+			],
+			[
+				"dat",
+				"dateObj\tstatement"
+			],
+			[
+				"R",
+				"FormRequest"
+			],
+			[
+				"insert",
+				"insertNewDistrict\tfunction"
+			],
+			[
+				"_",
+				"_db_cur"
+			],
+			[
+				"HTML",
+				"HtmlXPathSelector"
+			],
+			[
+				"du",
+				"dumps\tfunction"
+			],
+			[
+				"p",
+				"parse"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/q/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+			"file": "crawler/crawler/spiders/vinalo_spider.py",
 			"settings":
 			{
-				"buffer_size": 19546,
+				"buffer_size": 7835,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "crawler/mysql",
+			"settings":
+			{
+				"buffer_size": 242,
 				"line_ending": "Unix"
 			}
 		}
@@ -40,10 +128,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 367.0,
-		"last_filter": "Package Control: ",
+		"height": 392.0,
+		"last_filter": "insta",
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Remove Package"
@@ -60,6 +152,9 @@
 		"height": 126.0,
 		"history":
 		[
+			"//*[@id=\"bodyvh\"]/div[9]/div[2]/div[3]/div[5]/table/tbody/tr[1]/td/div",
+			"links = response.xpath('//a[contains(@href, \"image\")]')",
+			"u'Ph\\xf9 h\\u1ee3p v\\u1edbi m\\u1ee5c \\u0111\\xedch'",
 			"os.environ",
 			"print os.environ['HOME']",
 			"import os",
@@ -78,14 +173,68 @@
 	"expanded_folders":
 	[
 		"/Users/q/Desktop/crawler",
-		"/Users/q/Desktop/crawler/crawler",
-		"/Users/q/Desktop/crawler/crawler/crawler",
-		"/Users/q/Desktop/crawler/crawler/crawler/spiders"
+		"/Users/q/Desktop/crawler/crawler"
 	],
 	"file_history":
 	[
+		"/Users/q/Desktop/crawler/crawler/city",
+		"/Users/q/Desktop/crawler/crawler/category",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/E257B2D8-8205-43C9-B323-E14C60ABBFA0/city",
+		"/Users/q/Desktop/crawler/crawler/script.sh",
+		"/Users/q/Desktop/crawler/crawler/monitor.sh",
+		"/Users/q/Desktop/crawler/crawler/crawler/mail.txt",
+		"/Users/q/Desktop/crawler/crawler/mysql",
+		"/Users/q/Desktop/crawler/crawler/crawler/settings.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/vinalo_spider.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/model/city.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/BA657DE9-BCDA-496C-BA51-17FEBA50CCDA/vinalo_spider.py",
+		"/Users/q/Desktop/crawler/crawler/command",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/model/host.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/994BF669-0673-4A0F-B1A6-67012258AB86/script.sh",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/53C3CB1F-3BE9-4335-B11A-0F01E74FD55A/log_error",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/E332AD4C-1FA1-4E6E-B577-86D6A68FF3EC/log_error",
+		"/Users/q/Desktop/crawler/venv/lib/python2.7/site-packages/scrapy/http/request/form.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/BFA15C19-D821-49EE-9024-1E4307533960/vinalo_spider.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/65DB052A-5288-4577-A652-B9888CE81E7C/settings.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/93540966-58DC-44A9-A6BA-CC2BD5252F27/script.sh",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/99673E5D-DF99-4ABF-A276-2C184677AD3F/log_error",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/5B0DBC3E-FED8-4CDD-A8BE-266E00F195DB/script.sh",
+		"/Users/q/Desktop/crawler/crawler/build/lib/crawler/spiders/model/host.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/model/tag.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/model/objectTag.py",
+		"/Users/q/Desktop/crawler/crawler/log_error",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/309496C7-C038-4BF6-8D76-122028CB1C09/log_error",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/model/db.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/77AC0C13-4416-48AB-AAB1-4EE18997263C/city",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/05BE2F37-DEF2-4ABF-8D75-B570499F59EE/vinalo_spider.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/95B86624-6370-4E74-B3F4-1F6652B1D3F2/city",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/B17C5F50-F7E2-4AA4-AEF6-6610639C726E/script.sh",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/AAF5E217-C522-4275-BF40-B042B01CFDBA/log_error",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/58C72967-023C-4CA5-8AAF-A0ED19CEB195/vinalo_spider.py",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/C5504D81-DE61-4B92-94B4-D1E87A0F49C0/city",
+		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/68BADB8A-3096-451E-A389-35F13CAF9414/script.sh",
+		"/Users/q/Desktop/crawler/crawler/crawler/pipelines.py",
+		"/Users/q/Desktop/crawler/venv/lib/python2.7/site-packages/scrapy/spiders/__init__.py",
+		"/Users/q/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/q/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/q/Desktop/crawler/crawler/stats",
+		"/Users/q/Desktop/crawler/crawler/crawler/items.py",
+		"/Users/q/Downloads/ImageGrabber-master/ImageGrabber/settings.py",
+		"/Users/q/Downloads/ImageGrabber-master/ImageGrabber/spiders/ImageSpider.py",
+		"/Users/q/Downloads/ImageGrabber-master/ImageGrabber/items.py",
+		"/Users/q/Downloads/ImageGrabber-master/ImageGrabber/pipelines.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/test.html",
+		"/Users/q/Desktop/crawler/text_deploy",
+		"/Users/q/Desktop/crawler/crawler/scrapy.cfg",
 		"/Users/q/Desktop/crawler/crawler/crawler/spiders/hello_spider.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/city_spider.py",
+		"/Users/q/Desktop/crawler/crawler/html",
+		"/Users/q/Desktop/crawler/venv/lib/python2.7/site-packages/mysql/connector/cursor.py",
+		"/Users/q/Desktop/crawler/venv/lib/python2.7/site-packages/mysql/connector/abstracts.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/spiders/vinalo.py",
+		"/Users/q/Desktop/crawler/crawler/crawler/job_hello",
 		"/Users/q/Desktop/crawler/crawler.py",
+		"/Users/q/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
 		"/Users/q/Desktop/crawler/crawler.sublime-project",
 		"/Users/q/Desktop/crawler/import scrapy",
 		"/Users/q/Desktop/wassup/Podfile",
@@ -100,13 +249,15 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/q/Desktop/crawler/crawler/crawler/spiders",
+			""
 		]
 	},
 	"find_state":
@@ -114,6 +265,94 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"khánh h",
+			"khánh hoà",
+			"quãng ngãi",
+			"download_errback",
+			"checkNextPage",
+			"print",
+			"count",
+			"{",
+			"indexListCate",
+			"debug",
+			"TRACK_REFS",
+			"print",
+			"crawler",
+			"suffixId",
+			"crawler",
+			"<cord>",
+			"morekqloai",
+			"print",
+			"view",
+			"s",
+			"getIdProvinceFromCity",
+			"slugify",
+			"makeAlias",
+			".count",
+			"FormRequest",
+			"ha-tinh",
+			"state",
+			"com",
+			"\"\"",
+			"white",
+			"select",
+			"My Time Spa",
+			"error",
+			"print",
+			"log_std",
+			"images",
+			"files_store",
+			"pipe",
+			"priceTagId",
+			"getIdTagFromName",
+			"print",
+			"logging",
+			"print",
+			"suffixId",
+			"concurrent",
+			"LOG_LEVEL",
+			"break",
+			"'%s'",
+			".decode('utf-8'),",
+			"encode",
+			",",
+			"suffixId",
+			"alias",
+			".encode('utf-8')",
+			".strip()[:65535]",
+			"encode('utf-8')",
+			"decode",
+			",",
+			"response",
+			"item",
+			"rdct_0",
+			"bac can",
+			"bac kan",
+			"bắc",
+			"nghĩa",
+			"nghĩa ",
+			"nghĩa tình",
+			"\"0\"",
+			"52552f0af525bc126c92e5a5",
+			"52552f0af525bc126c92e5cd",
+			"read",
+			"text",
+			"[0h0]",
+			"tab",
+			"rt",
+			"al",
+			"atc",
+			"tidd",
+			"of",
+			"52552f0af525bc126c92e5a5",
+			"dx",
+			"dxt",
+			"621030",
+			"of",
+			"viewmore",
+			"HOW TO RUN",
+			"IMPROVING ACCESS",
+			"line",
 			"/bin",
 			"/Users/bin",
 			"/Users/q/bin",
@@ -131,6 +370,23 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\n",
+			"scrapy.Field()",
+			"%s",
+			",",
+			"decode",
+			".encode('utf-8'),",
+			".encode('utf-8')",
+			"",
+			"encode('utf-8').strip()[:65535]",
+			"encode",
+			".decode('utf-8'),",
+			"self",
+			"self\n",
+			"\n",
+			"\\r\\n",
+			" \\n",
+			" "
 		],
 		"reverse": false,
 		"show_context": true,
@@ -141,34 +397,62 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/q/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+					"file": "crawler/crawler/spiders/vinalo_spider.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 19546,
+						"buffer_size": 7835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9502,
-								9502
+								4899,
+								4899
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5349.0,
+						"translation.y": 2616.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "crawler/mysql",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								242
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -179,7 +463,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -210,17 +494,21 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 260.0
+		"height": 277.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 118.0
+	},
 	"pinned_build_system": "Packages/Python/Python.sublime-build",
 	"project": "crawler.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 98.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -234,12 +522,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Desktop/crawler/crawler.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
