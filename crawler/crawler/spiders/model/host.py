@@ -175,5 +175,37 @@ class Host():
             print err
         return False
 
+    def getItems(self):
+        query = "SELECT id,alias,crawler FROM host WHERE crawler != \"\" AND description LIKE '%s' ORDER BY `host`.`id` ASC"%("%đang cập nhật%")
+        print query
+        try:
+            self.db.query(query, None)
+            data = self.db._db_cur.fetchall()
+            if data != None:
+                return data
+            return False
+        except mysql.connector.Error as err:
+            print err
+        return False
 
+    def getDescription(self, response):
+        hxs = Selector(text=response.body)
+        listDescription = hxs.css('h2.prcbdd1::text').extract()
+        res = ""
+        if len(listDescription):
+            res = "\n".join(listDescription)
+        print res
+        return res
 
+    def updateDescription(self, id, description):
+        self.db.query("set names utf8;", None) 
+        query = "UPDATE host SET description=%s WHERE id=%s"
+        try:
+            self.db.query(query, (description,id))
+            self.db.commit()
+            # print self.db._db_cur._executed
+            return True
+        except mysql.connector.Error as err:
+            print err
+            print self.db._db_cur._executed
+        return False
