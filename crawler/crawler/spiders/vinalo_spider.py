@@ -133,7 +133,8 @@ class VinaloSpider(scrapy.Spider):
                 # print link
                 yield scrapy.Request(url=link, 
                         callback=self.readDetailHost,
-                        meta = meta
+                        meta = meta,
+                        dont_filter = True
                     )
 
         
@@ -214,8 +215,8 @@ class VinaloSpider(scrapy.Spider):
 
             self.indexListCate = 0
             self.indexCity += 1
-            city = listCity[self.indexCity]
             if self.indexCity < len(listCity):
+                city = listCity[self.indexCity]
                 with open("stats", "w") as f:
                     for cityName,number in self.state.iteritems():
                         str = "%s: %s\n" % (slugify(cityName), number)

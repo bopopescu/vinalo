@@ -175,5 +175,109 @@ class Host():
             print err
         return False
 
+    def getItems(self):
+        query = "SELECT id,alias,crawler FROM host WHERE crawler != \"\" AND description LIKE '%s' ORDER BY `host`.`id` ASC"%("%đang cập nhật%")
+        print query
+        try:
+            self.db.query(query, None)
+            data = self.db._db_cur.fetchall()
+            if data != None:
+                return data
+            return False
+        except mysql.connector.Error as err:
+            print err
+        return False
 
+    def getDescription(self, response):
+        hxs = Selector(text=response.body)
+        listDescription = hxs.css('h2.prcbdd1::text').extract()
+        res = ""
+        if len(listDescription):
+            res = "\n".join(listDescription)
+        print res
+        return res
 
+    def updateDescription(self, id, description):
+        self.db.query("set names utf8;", None) 
+        query = "UPDATE host SET description=%s WHERE id=%s"
+        try:
+            self.db.query(query, (description,id))
+            self.db.commit()
+            # print self.db._db_cur._executed
+            return True
+        except mysql.connector.Error as err:
+            print err
+            print self.db._db_cur._executed
+        return False
+
+    def getListHost(self,idx,limit):
+        query = "SELECT id,alias,crawler,tag FROM host WHERE crawler != \"\" ORDER BY `host`.`id` ASC LIMIT %s,%s"%(idx,limit)
+        try:
+            self.db.query(query, None)
+            data = self.db._db_cur.fetchall()
+            if data != None:
+                return data
+            return False
+        except mysql.connector.Error as err:
+            print err
+        return False
+
+    def getKeyword(self, response):
+        meta = response.meta
+
+        id = meta['id']
+        txtTag = meta['tag']
+
+        hxs = Selector(text=response.body)
+        rows = hxs.xpath('//div[@class="rdct_0"]/table/tr/td/div/p[@class="imgtiddtt"]/text()').extract()
+
+        tag = Tag()
+        objectTag = ObjectTag()
+        listTagId = []
+
+        # list tag
+        for idx,row in enumerate(rows):
+            if row == u'Phục vụ các món':
+                tag.patternTypeId = 7
+                xpath = '//div[@class="rdct_0"]/table/tr/td/div'
+                rr = hxs.xpath(xpath).extract()
+                rrr = Selector(text=rr[idx]).xpath('//p[@class="bleftdd_1"]/a/text()').extract()
+                for r in rrr:
+                    t = r.strip()
+                    if t != u'Khác':
+                        txtTag += ',' + t
+                        listTagId.append(tag.getIdTagFromName(t, 19454))
+
+            if row == u'Phù hợp với mục đích':
+                tag.patternTypeId = 0
+                xpath = '//div[@class="rdct_0"]/table/tr/td/div'
+                rr = hxs.xpath(xpath).extract()
+                rrr = Selector(text=rr[idx]).xpath('//p[@class="bleftdd_1"]/a/text()').extract()
+                for r in rrr:
+                    t = r.strip()
+                    if t != u'Khác':
+                        txtTag += ',' + t
+                        listTagId.append(tag.getIdTagFromName(t, 0))
+
+        # print txtTag
+        
+        # update tag object
+        for tagId in listTagId:
+            if tagId > 0:
+                # print id, tagId
+                objectTag.insertNewObjectTag(id, tagId)
+
+        self.updateKeyword(id,txtTag)
+
+    def updateKeyword(self,id,txtTag):
+        self.db.query("set names utf8;", None) 
+        query = "UPDATE host SET tag=%s WHERE id=%s"
+        try:
+            self.db.query(query, (txtTag,id))
+            self.db.commit()
+            # print self.db._db_cur._executed
+            return True
+        except mysql.connector.Error as err:
+            print err
+            print self.db._db_cur._executed
+        return False
