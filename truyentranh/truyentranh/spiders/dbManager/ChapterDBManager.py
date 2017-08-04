@@ -9,6 +9,15 @@ class ChapterDBManager(BaseDBManager):
   typeClass = Chapter
 
   def addNewChapter(self, chapter):
-    chapter.chapter_slug = makeAlias(chapter.chapter_name)
-    return self.insert(chapter)
+    item = self.fetchRow(chapter, 
+                          {"chapter_name": chapter.chapter_name, 
+                          "chapter_book":chapter.chapter_book}
+    )
+    print item
+    '''add new chapter'''
+    if item == None:
+      chapter.chapter_slug = makeAlias(chapter.chapter_name)
+      return self.insert(chapter)
+    return item['chapter_id']
+    
 
