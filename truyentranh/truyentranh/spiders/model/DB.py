@@ -6,7 +6,7 @@ class MyDB(object):
   _db_cur = None
 
   def __init__(self):
-    self._db_connection = mysql.connector.connect(host='172.17.0.3',
+    self._db_connection = mysql.connector.connect(host='172.17.0.4',
                 database='truyentranh',
                 user='truyentranh',
                 password='123',

@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
+# encoding=utf8
 
 import inspect
 import logging
 from slugify import slugify
+import sys  
+
+reload(sys)  
+sys.setdefaultencoding('utf8')
 
 def writeFile(name, content):
   with open(name, 'wb') as f:

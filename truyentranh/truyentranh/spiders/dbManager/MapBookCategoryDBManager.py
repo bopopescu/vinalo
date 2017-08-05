@@ -15,4 +15,4 @@ class MapBookCategoryDBManager(BaseDBManager):
     mapBookCategory.book_id = book.book_id
     for idCate in listCate:
       mapBookCategory.category_id = idCate
-      self.insert(mapBookCategory)
+      self.insert(mapBookCategory, True)

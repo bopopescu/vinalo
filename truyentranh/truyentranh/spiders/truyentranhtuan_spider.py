@@ -56,15 +56,20 @@ class TruyenTranhTuanSpider(scrapy.Spider):
       )
 
       """debug"""
-      break
+      # break
   
+  def getText(self, ele):
+    if ele != None:
+      return ele.text.encode('utf-8', 'ignore').strip()
+    return ""
+
   def readDetail(self, response):
     soup = BeautifulSoup(response.body,'lxml')
     book = response.meta['book']
     
     p = soup.findAll('p', {'class': 'misc-infor'})
     '''author'''
-    book.book_author = p[1].find('a').text.encode('utf-8', 'ignore').strip()
+    book.book_author = self.getText(p[1].find('a'))
 
     '''category'''
     book_category = []
@@ -77,7 +82,7 @@ class TruyenTranhTuanSpider(scrapy.Spider):
 
     '''description'''
     div = soup.find('div', {'id':'manga-summary'})
-    book.book_description = div.text.encode('utf-8', 'ignore').strip()
+    book.book_description = self.getText(div)
 
     book.book_id = self.bookDBManager.addNewBook(book, self.site)
 
@@ -89,7 +94,7 @@ class TruyenTranhTuanSpider(scrapy.Spider):
     for ele in listChapter:
       chapter = Chapter()
       chapter.chapter_book = book.book_id
-      chapter.chapter_name = ele.text.encode('utf-8', 'ignore').strip()
+      chapter.chapter_name = self.getText(ele)
       chapter.chapter_order = order
       order -= 1
       a = ele.find('a')
@@ -99,7 +104,7 @@ class TruyenTranhTuanSpider(scrapy.Spider):
       )
 
       """debug"""
-      break
+      # break
 
   def readContentChapter(self, response):
     soup = BeautifulSoup(response.body,'lxml')

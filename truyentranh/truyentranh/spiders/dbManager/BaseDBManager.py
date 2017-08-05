@@ -3,6 +3,7 @@
 from slugify import slugify
 from ..model.db import MyDB
 from ..model.libs import *
+import mysql.connector
 import logging
 
 class BaseDBManager:
@@ -10,7 +11,7 @@ class BaseDBManager:
   table = ""
   typeClass = object
 
-  def insert(self, obj):
+  def insert(self, obj, ignoreDuplicate = False):
     self.db.query("set names utf8;", None)
     try:
       query = self.prepareInsert(obj)
@@ -25,6 +26,10 @@ class BaseDBManager:
     except UnicodeDecodeError as err:
       print "insert error: ", err
       print self.db._db_cur._executed
+    except mysql.connector.Error as err:
+      if ignoreDuplicate == False:
+        print "DB error: ", err
+        print self.db._db_cur._executed
     return None
 
   def update(self, values, where):

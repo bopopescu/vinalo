@@ -13,7 +13,7 @@ class ChapterDBManager(BaseDBManager):
                           {"chapter_name": chapter.chapter_name, 
                           "chapter_book":chapter.chapter_book}
     )
-    print item
+    # print item
     '''add new chapter'''
     if item == None:
       chapter.chapter_slug = makeAlias(chapter.chapter_name)

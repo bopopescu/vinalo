@@ -88,19 +88,36 @@
 	"buffers":
 	[
 		{
-			"file": "crawler/crawler/spiders/vinalo_spider.py",
+			"file": "truyentranh/truyentranh/spiders/truyentranhtuan_spider.py",
 			"settings":
 			{
-				"buffer_size": 7835,
+				"buffer_size": 3623,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "crawler/mysql",
+			"file": "truyentranh/truyentranh/spiders/dbManager/BookDBManager.py",
 			"settings":
 			{
-				"buffer_size": 242,
+				"buffer_size": 1078,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "truyentranh/truyentranh/spiders/model/Libs.py",
+			"settings":
+			{
+				"buffer_size": 870,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "truyentranh/truyentranh/spiders/dbManager/ChapterDBManager.py",
+			"settings":
+			{
+				"buffer_size": 612,
 				"line_ending": "Unix"
 			}
 		}
@@ -172,11 +189,21 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/q/Desktop/crawler",
-		"/Users/q/Desktop/crawler/crawler"
+		"/Users/lvdiep/Documents/truyentranh",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders/dbManager",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders/model"
 	],
 	"file_history":
 	[
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders/model/BaseModel.py",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders/dbManager/MapBookCategoryDBManager.py",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders/model/DB.py",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders/dbManager/ChapterDBManager.py",
+		"/Users/lvdiep/Documents/truyentranh/truyentranh/truyentranh/spiders/dbManager/BaseDBManager.py",
+		"/Users/lvdiep/Documents/truyentranh/crawler/crawler/spiders/vinalo_spider.py",
 		"/Users/q/Desktop/crawler/crawler/city",
 		"/Users/q/Desktop/crawler/crawler/category",
 		"/Users/q/Library/Caches/Cleanup At Startup/Transmit/E257B2D8-8205-43C9-B323-E14C60ABBFA0/city",
@@ -265,6 +292,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p[1].find('",
+			"print",
 			"khánh h",
 			"khánh hoà",
 			"quãng ngãi",
@@ -397,59 +426,121 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "crawler/crawler/spiders/vinalo_spider.py",
+					"file": "truyentranh/truyentranh/spiders/truyentranhtuan_spider.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7835,
+						"buffer_size": 3623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4899,
-								4899
+								1844,
+								1844
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2616.0,
+						"translation.y": 862.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "truyentranh/truyentranh/spiders/dbManager/BookDBManager.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								470,
+								479
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "truyentranh/truyentranh/spiders/model/Libs.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "crawler/mysql",
-					"semi_transient": true,
+					"buffer": 3,
+					"file": "truyentranh/truyentranh/spiders/dbManager/ChapterDBManager.py",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 242,
+						"buffer_size": 612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								26,
-								242
+								310,
+								322
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
