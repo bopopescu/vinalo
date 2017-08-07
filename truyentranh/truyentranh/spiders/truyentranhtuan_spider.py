@@ -22,6 +22,10 @@ from dbManager.BookDBManager import BookDBManager
 from dbManager.ChapterDBManager import ChapterDBManager
 from dbManager.CategoryDBManager import CategoryDBManager
 from dbManager.MapBookCategoryDBManager import MapBookCategoryDBManager
+from scrapy.item import Item
+from truyentranh.items import TruyentranhItem
+from scrapy.linkextractors import LinkExtractor
+from scrapy.loader import ItemLoader
 
 class TruyenTranhTuanSpider(scrapy.Spider):
   name = "truyentranhtuan"
@@ -56,7 +60,7 @@ class TruyenTranhTuanSpider(scrapy.Spider):
       )
 
       """debug"""
-      # break
+      break
   
   def getText(self, ele):
     if ele != None:
@@ -64,6 +68,8 @@ class TruyenTranhTuanSpider(scrapy.Spider):
     return ""
 
   def readDetail(self, response):
+    # loader = ItemLoader(item = TruyentranhItem(), response = response)
+    # loader.add_xpath('image_urls', '//div[@class="manga-cover"]/img/@src')
     soup = BeautifulSoup(response.body,'lxml')
     book = response.meta['book']
     
@@ -88,6 +94,9 @@ class TruyenTranhTuanSpider(scrapy.Spider):
 
     self.mapBookCategoryDBManager.addBookCategory(book, book_category)
 
+    '''download avatar'''
+    yield self.downloadImage(response)
+
     '''chapter'''
     listChapter = soup.findAll('span', {'class': 'chapter-name'})
     order = len(listChapter)
@@ -104,7 +113,12 @@ class TruyenTranhTuanSpider(scrapy.Spider):
       )
 
       """debug"""
-      # break
+      break
+
+  def downloadImage(self, response):
+    loader = ItemLoader(item = TruyentranhItem(), response = response)
+    loader.add_xpath('image_urls', '//div[@class="manga-cover"]/img/@src')
+    return loader.load_item()
 
   def readContentChapter(self, response):
     soup = BeautifulSoup(response.body,'lxml')
